@@ -36,3 +36,34 @@ footer{
   text-align: center;
   color: #fff;
 }
+
+/* form */
+.form {
+  border: solid 2px #0082AC;
+}
+
+textarea {
+  height: 200px;
+}
+
+.form .btn-info {
+  background-color: #0082AC;
+  color: #fff;
+  width: 100%;
+}
+
+.vl {
+  border-right: 1px solid #0082AC;
+}
+
+.form-right img {
+  width: 20px;
+}
+
+.form h3 {
+  font-size: 20px;
+}
+
+.form label {
+  font-size: 20px;
+}
