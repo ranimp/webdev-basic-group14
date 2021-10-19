@@ -39,7 +39,7 @@ footer{
 
 /* form */
 .form {
-  border: solid 2px #0082AC;
+  border: solid 2px #76C9E4;
 }
 
 textarea {
@@ -53,7 +53,7 @@ textarea {
 }
 
 .vl {
-  border-right: 1px solid #0082AC;
+  border-right: 1px solid #76C9E4;
 }
 
 .form-right img {
