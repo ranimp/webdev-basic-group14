@@ -1,0 +1,72 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* navbar */
+nav {
+  background-color: #0082ac;
+  background-size: cover;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 30%;
+}
+
+/* footer */
+footer {
+  background-color: #0082ac;
+  background-size: cover;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-logo img {
+  width: 130%;
+}
+
+.footer-kontak img {
+  width: 6%;
+  max-width: 50px;
+}
+
+.credit {
+  text-align: center;
+  color: #fff;
+}
+
+/* konten */
+
+.content h2 {
+  text-align: center;
+}
+
+.cap-pic {
+  text-align: center;
+  color: #999999;
+}
+
+.detail-date {
+  text-align: center;
+  color: #999999;
+  font-size: 14;
+}
+
+.content .comment {
+  background-color: #76c9e4;
+}
+
+textarea {
+  height: 100px;
+}
+
+.content .comment button {
+  float: right;
+  width: 30%;
+  background-color: #0082ac;
+  color: #fff;
+  height: 40px;
+}
