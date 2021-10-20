@@ -1,0 +1,69 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* navbar */
+nav {
+  background-color: #0082AC;
+  background-size: cover;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 30%;
+}
+
+/*card */
+.card {
+margin-bottom: 30px;
+}
+
+
+.card .card-body {
+  margin-top: 5%;
+}
+
+/* Extra small devices (phones, 990px and down) */
+@media only screen and (max-width: 990px) {
+  h4 {
+      text-align: center;
+  }
+
+  .card {
+      display: inline-block;
+  }
+  .card img {
+      margin: 0;
+  }
+  .card .card-body {
+      margin: 0;
+  }
+  
+}
+
+/* footer */
+footer{
+  background-color: #0082AC;
+  background-size: cover;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-logo img {
+  width: 130%;
+}
+
+.footer-kontak img {
+  width: 6%;
+  max-width: 50px;
+}
+
+.credit {
+  text-align: center;
+  color: #fff;
+}
+
+
+
