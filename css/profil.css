@@ -1,0 +1,59 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* navbar */
+nav {
+  background-color: #0082ac;
+  background-size: cover;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 30%;
+}
+
+/* footer */
+footer {
+  background-color: #0082ac;
+  background-size: cover;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-logo img {
+  width: 130%;
+}
+
+.footer-kontak img {
+  width: 6%;
+  max-width: 50px;
+}
+
+.credit {
+  text-align: center;
+  color: #fff;
+}
+
+/* content */
+.visi {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rounded-start {
+  max-width: 90%;
+  margin-left: 2%;
+}
+.group {
+  margin: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+  .visi {
+    flex-direction: column;
+  }
+}
