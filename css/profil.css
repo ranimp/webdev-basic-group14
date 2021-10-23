@@ -1,6 +1,7 @@
-* {
+body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  color: #4f4f4f;
 }
 
 /* navbar */
@@ -43,13 +44,33 @@ footer {
   display: flex;
   flex-direction: row-reverse;
 }
-
 .rounded-start {
   max-width: 90%;
   margin-left: 2%;
 }
 .group {
   margin: 5%;
+}
+.group img {
+  min-height : 50vh;
+  max-height : 50vh;
+}
+.group .card-body{
+  min-height : 30vh;
+}
+
+/* keyframes */
+@keyframes section1 {
+  from {top : -50px}
+  to {top: 0px}
+}
+@keyframes section2 {
+  from {left: -100px}
+  to {left:0px}  
+}
+@keyframes section3 {
+  from {right: -100px}
+  to {right:0px}  
 }
 
 @media only screen and (max-width: 767px) {
