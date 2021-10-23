@@ -11,6 +11,12 @@
     <!-- My css -->
     <link rel="stylesheet" href="./css/home-page.css">
 
+    <!-- MDB CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -43,111 +49,144 @@
       </div>
     </nav>
     <!-- end navbar -->
+    <!-- start section 1 -->
     <div class="container mt-4"> 
       <div class="row">
         <div class="col-lg-6">
-          <img src="./assets/logo.png" style="width: 80%;">
+          <img src="./assets/logo.png" style="width: 80%; animation: moveleft 2s; position:relative;">
         </div>
         <div class="col-lg-6 fs-5">
           <table style="height: 100%;">
             <tbody>
               <tr>   
-                <td class="align-middle">
+                <td class="align-middle" style="animation: moveright 2s; position:relative;">
                   <h2>Computer Cyber Study Club</h2>
                   <p>Computer Cyber Study Club UMRAH (CC Study Club) merupakan sebuah perkumpulan mahasiswa Teknik Informatika, Universitas Maritim Raja Ali Haji (UMRAH). Study Club yang berdiri pada tanggal 22 Februari 2015, bertujuan sebagai wadah untuk mahasiswa agar dapat saling bertukaran pikiran, ilmu, wawasan dan mampu menghasilkan ide-ide serta gagasan-gagasan baru dalam kemajuan ilmu pengetahuan dan teknologi.</p>
-                  <button type="button" class="btn btn-info mx-auto">Selengkapnya</button>
+                  <a href="/profile-page.html" target="_blank"> 
+                    <button type="button" class="btn btn-info mx-auto">Selengkapnya</button>
+                  </a>
                   </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <!-- EDIT HERE -->
+      <!-- end section 1 -->
+
       <!--start-carousel-->
-      <div id="carouselExampleControls" class="carousel slide mt-5 mb-5" data-bs-ride="carousel ">
-        <h2 class="mb-3">Kegiatan Kami</h2>
+      <h2 style="margin-top: 20vh;" class="mb-3">Kegiatan Kami</h2>
+      <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        </ol>
+        <!-- Inner -->
         <div class="carousel-inner">
+          <!-- Single item -->
           <div class="carousel-item active">
-            <a href="detail-kegiatan.html">
-              <img
-                src="assets/kegiatan5.jpeg"
-                class="d-block w-100" alt="gambar">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2>MINIBOOTCAMP ANIMATION 2D</h2>
+                  <a class="btn btn-outline-light btn-lg m-2"
+                    href="/detail-kegiatan.html" target="_blank" role="button">Selengkapnya</a>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
+          <!-- Single item -->
           <div class="carousel-item">
-            <a href="detail-kegiatan.html">
-              <img
-                src="assets/kegiatan3.jpeg"
-                class="d-block w-100" alt="gambar">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2>WORKSHOP ANGGOTA COMPUTER CYBER VIRTUAL 2020</h2>
+                  <a class="btn btn-outline-light btn-lg m-2"
+                    href="/detail-kegiatan.html" target="_blank" role="button">Selengkapnya</a>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
+          <!-- Single item -->
           <div class="carousel-item">
-            <a href="detail-kegiatan.html">
-              <img
-                src="assets/kegiatan6.jpeg"
-                class="d-block w-100" alt="gambar">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2>Lihat semua kegiatan</h2>
+                  <a class="btn btn-outline-light btn-lg m-2"
+                    href="/list-kegiatan.html" target="_blank" role="button">Selengkapnya</a>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <!-- Inner -->
+  
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
 
       <!--Start-card-->
-      <h2 style="margin-top: 10%;" class="mb-3">Berita Terkini</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-        <div class="col">
-          <div class="card">
-            <img src="assets/berita1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div class="berita" style="animation: movebot 3s; position:relative;">
+
+        <h2 style="margin-top: 20vh;" class="mb-3">Berita Terkini</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+          <div class="col">
+            <div class="card">
+              <img src="assets/berita1.jpeg" class="card-img-top" alt="berita1">
+              <div class="card-body">
+                <h5 class="card-title">Lolos Tahap Wawancara Anggota CC Study Club 2021/2022</h5>
+                <p class="card-text">Selamat kepada peserta yang berhasil lolos ke tahap wawancara CC Study Club tahun kepengurusan 2021/2022.</p>
+                <div class="lengkap">
+                  <a href="/detail-berita.html" target="_blank">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/berita2.jpeg" class="card-img-top" alt="berita2">
+              <div class="card-body">
+                <h5 class="card-title">Pengumuman Anggota CC Study Club 2021/2022</h5>
+                <p class="card-text">Selamat kepada rekan-rekan yang telah dinyatakan menjadi bagian dari kepengurusan Computer Cyber periode 2021/2022.</p>
+                <div class="lengkap">
+                  <a href="/detail-berita.html" target="_blank">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/berita3.jpeg" class="card-img-top" alt="berita3">
+              <div class="card-body">
+                <h5 class="card-title">Ketua dan Wakil Ketua Computer Cyber Student Club Periode 2021/2022</h5>
+                <p class="card-text">Selamat atas terpilihnya ketua dan wakitl ketua Computer Cyber Study Club periode 2021/2022</p>
+                <div class="lengkap">
+                  <a href="/detail-berita.html" target="_blank">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/berita2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/berita3.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <button type="button" class="btn btn-info mx-auto">Selengkapnya</button>
+        <a href="/profile-page.html" target="_blank"> 
+          <center><button type="button" class="btn btn-info mx-auto">berita lainnya</button></center>
+        </a>
       </div>
 
       <!-- Daftar -->
       <div class="daftar">
         <h2>Tertarik untuk bergabung dengan kami?</h2>
-        <button type="button" class="btn btn-info mx-auto">Daftar Sekarang</button>
+        <a href="/form-oprec.html" target="_blank">
+          <button type="button" class="btn btn-info mx-auto mt-2">Daftar Sekarang</button>
+        </a>
       </div>
     </div>
   
@@ -197,6 +236,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
 
   </body>
 </html>
