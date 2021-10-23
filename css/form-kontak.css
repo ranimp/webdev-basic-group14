@@ -1,5 +1,6 @@
-* {
+body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#4f4f4f;
 }
 
 /* navbar */
@@ -50,6 +51,12 @@ textarea {
   background-color: #0082AC;
   color: #fff;
   width: 100%;
+}
+
+.btn-info:hover {
+  background-color:#fff;
+  border: 1px solid #0082AC;
+  color: #0082AC;
 }
 
 .vl {

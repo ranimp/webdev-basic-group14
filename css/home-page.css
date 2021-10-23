@@ -127,6 +127,15 @@ h2 {
   margin-top: 20vh;
 }
 
+.navbar-toggler{
+  border: 2px solid #fff;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 /* keyframe */
 @keyframes moveright {
   from {right: -100px;}
