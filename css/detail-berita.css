@@ -45,7 +45,6 @@ footer {
 }
 
 .cap-pic {
-  text-align: center;
   color: #999999;
 }
 
@@ -55,8 +54,16 @@ footer {
   font-size: 14;
 }
 
+.nav-link {
+	color:#0082AC;
+}
+
 .content .comment {
   background-color: #76c9e4;
+}
+
+.content img {
+  max-width: 50vw;
 }
 
 textarea {

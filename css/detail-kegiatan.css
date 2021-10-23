@@ -47,12 +47,24 @@ footer{
 }
 
 .carousel .carousel-inner .carousel-item {
-	background-color:#76C9E4;
+	background-color:rgb(26, 26, 26);
 }
 
-.content h3 {
+.content h2 {
+  text-align: center;
+}content h3 {
 	text-align:center;
 	font-size:20px
+}
+
+.detail-date {
+  text-align: center;
+  color: #999999;
+  font-size: 14;
+}
+
+.nav-link {
+	color:#0082AC;
 }
 
 .content .comment {
