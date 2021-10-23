@@ -100,40 +100,46 @@
           Regards, Computer Cyber
         </p>
         <!-- end desc -->
+
         <!-- start comment -->
         <h4 class="mt-5">Komentar</h4>
-        <div class="comment">
-          <form class="p-5">
-            <input type="text" class="form-control" id="inputNama" placeholder="Masukkan nama anda"> <br>
+        <div class="comment" id="comment-form-section">
+          <form class="p-5" id="comment-form">
+            <input type="text" class="form-control" id="input-username" placeholder="Masukkan nama anda"> <br>
             <textarea
               class="form-control"
-              id="inputComment1"
+              id="input-comment"
               placeholder="Tulis komentar anda"
             ></textarea>
             <div class="button py-3">
-              <button type="submit" class="btn btn-info">Kirim</button>
+              <button type="submit" class="btn btn-info" id="btn-submit">Kirim</button>
             </div>
           </form>
           <hr />
           <div class="row">
-            <div class="d-none d-lg-block col-lg-2 ps-5 py-3">
-              <img src="./assets/user.png" class="w-100" />
-            </div>
-            <div class="col-lg-10 px-5 py-3">
-              <h4>Agus</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                pellentesque aliquam commodo. Duis mollis, sapien ut vestibulum
-                venenatis, nibh lectus consectetur metus, ac vehicula nisi ante
-                quis libero. In hac habitasse platea dictumst. Praesent sit amet
-                libero id felis viverra posuere. Mauris interdum fermentum
-                egestas. Fusce egestas purus vitae sapien tempus, at imperdiet
-                mauris sollicitudin.
-              </p>
+            <div class="col-lg-12 px-5 py-3">
+              <ul 
+                id="comment-list"
+                class="list-group list-group-flush overflow-auto"
+                >
+                <li class="list-group-item d-flex
+                justify-content-between
+                align-items-start" style="margin-top: 10px">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold text-capitalize">Agus</div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    pellentesque aliquam commodo. Duis mollis, sapien ut vestibulum
+                    venenatis, nibh lectus consectetur metus, ac vehicula nisi ante
+                    quis libero. In hac habitasse platea dictumst. 
+                  </div>
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <!-- end comment -->
+
       </div>
     </div>
     <!-- end content -->
@@ -199,5 +205,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/comment.js"></script>
   </body>
 </html>
