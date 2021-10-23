@@ -1,5 +1,6 @@
-* {
+body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #4f4f4f;
 }
 
 /* navbar */
@@ -20,8 +21,17 @@ margin-bottom: 30px;
 }
 
 
-.card .card-body {
-  margin-top: 5%;
+.card img {
+  min-width: 20vw;
+}
+
+.lengkap a {
+  color: #0082AC;
+  text-decoration: none;
+}
+
+.lengkap {
+  margin-bottom: 20px;
 }
 
 /* Extra small devices (phones, 990px and down) */
