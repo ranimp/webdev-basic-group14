@@ -6,7 +6,7 @@ const elCommentForm = document.querySelector('#comment-form').addEventListener('
     const elInputUsername = document.querySelector('#input-username').value;
     const elInputComment = document.querySelector('#input-comment').value;
     const newList = document.createElement("li")
-    newList.className = "list-group-item d-flex justify-content-between align-items-start";
+    newList.className = "list-group-item d-flex justify-content-between align-items-start m-2";
     newList.style.marginTop = "10px";
     const parent = document.getElementById("comment-list");
     parent.prepend(newList);
