@@ -7,7 +7,7 @@ const elBtnSubmit = document.querySelector("#btn-submit").addEventListener("clic
   event.preventDefault()
   if (!elInputEmail.value.match(emailValidator)){
     alert('tolong masukkan email yang valid')
-  } else if (elInputMessage.value.length <= 20){
+  } else if (elInputMessage.value.length < 20){
     alert('tolong masukkan pesan lebih dari 20 karakter')
   } else {
     location.href = "/done-kontak.html";
