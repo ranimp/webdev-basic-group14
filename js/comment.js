@@ -1,6 +1,5 @@
-  const elCommentList = document.querySelector('#comment-list');  
+const elCommentList = document.querySelector('#comment-list');  
 const elCommentSection = document.querySelector('#comment-form-section');
-const elAvatarImg = document.querySelector('#avatar-img');
 const elCommentForm = document.querySelector('#comment-form').addEventListener('submit', (submitComment) => {
     event.preventDefault()
 
