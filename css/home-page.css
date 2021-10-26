@@ -131,6 +131,17 @@ h2 {
   border: 2px solid #fff;
 }
 
+#dateTime {
+  width: 300px;
+  height: 60px;
+  background-image: url(/assets/date-2.jpg);
+  color : #fff;
+}
+
+.kelas-date {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 /* keyframe */
 @keyframes moveright {
