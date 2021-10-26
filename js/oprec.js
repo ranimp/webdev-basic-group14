@@ -8,7 +8,7 @@ const elInputAlasan = document.querySelector("#input-alasan");
 const elInputCheck = document.querySelector("#input-check");
 
 const elForm = document.querySelector("#form");
-const emailValidator = /[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]*/;
+const emailValidator = /[0-9]+@student.umrah.ac.id*/;
 const namaValidator = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
 const angkatanValidator = /^20+[0-9]*$/;
 
@@ -23,11 +23,11 @@ const elHelpAlasan = document.querySelector("#alasan-help");
 const elBtnSubmit = document.querySelector("#btn-submit").addEventListener("click", (event) => {
   event.preventDefault()
 
-  !elInputNama.value.match(namaValidator) ? elHelpNama.innerHTML = '<span style="color:red;">Masukkan nama yang valid</span>' : elHelpNama.innerHTML = ""
+  !elInputNama.value.match(namaValidator) ? elHelpNama.innerHTML = '<span style="color:red;">Masukkan nama yang valid</span>' : elHelpNama.innerHTML = "";
 
   elInputNama.value.length === 0 ? elHelpNama.innerHTML = '<span style="color:red;">Nama wajib diisi!</span>' : '';
 
-  !elInputEmail.value.match(emailValidator) ? elHelpEmail.innerHTML = '<span style="color:red;">Masukkan email yang valid</span>' : elHelpEmail.innerHTML = "";
+  !elInputEmail.value.match(emailValidator) ? elHelpEmail.innerHTML = '<span style="color:red;">Gunakan email dari UMRAH</span>' : elHelpEmail.innerHTML = "";
 
   elInputJurusan.value.length === 0 ? elHelpJurusan.innerHTML = '<span style="color:red;">Jurusan wajib diisi!</span>': elHelpJurusan.innerHTML = "";
 
